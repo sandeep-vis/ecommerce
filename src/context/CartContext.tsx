@@ -1,4 +1,13 @@
-import React, { createContext, useContext, useReducer, ReactNode } from 'react';
+import { createContext, useContext, useReducer } from 'react';
+import type { ReactNode } from 'react';
+
+// ...rest of your CartContext code
+
+
+
+// import React, { createContext, useContext, useReducer, ReactNode } from 'react';
+
+
 // import { Product } from '../types/Product';
 export interface Product  {
   id: number;
