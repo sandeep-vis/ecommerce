@@ -43,11 +43,20 @@ export default function Home() {
 
   return (
     <div className="p-4">
+
+      <div className="flex flex-col sm:flex-row  sm:space-x-4 space-y-6
+      sm:space-y-0 mb-6">
       <SearchBar value={search} onChange={setSearch} />
       <CategoryFilter categories={categories} selected={category} onChange={setCategory} />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {filtered.map(product => <ProductCard key={product.id} product={product} />)}
       </div>
     </div>
   );
 }
+
+
+
+
+
